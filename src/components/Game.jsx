@@ -57,13 +57,10 @@ function Game(props){
         <div 
             className={`col-pick${playerTurn}`}
             onClick={e => column(e)}
-            onTouchMove={e => change(e)}
             onMouseEnter={e => change(e)} 
             key={index}
             id={index}>{turnDuration}</div> :
         <div 
-            onClick={e => column(e)}
-            onTouchMove={e => change(e)} 
             onMouseEnter={e => change(e)} 
             key={index}
             id={index}></div>;
