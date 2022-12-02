@@ -2,6 +2,7 @@ import React,{useEffect, useState} from "react";
 import useGameStatus from "../customHooks/useGameStatus";
 import useDisplayFields from "../customHooks/useDisplayFields";
 import displayFields from "../customHooks/useDisplayFields";
+import Swipe from "react-easy-swipe";
 
 
 function Game(props){
@@ -55,17 +56,17 @@ function Game(props){
         const placeHolder = value ? 
         <div 
             className={`col-pick${playerTurn}`}
-            onClick={e => column(e)} 
+            onClick={e => column(e)}
+            onTouchMove={e => change(e)}
+            onMouseEnter={e => change(e)} 
             key={index}
-            id={index}
-            onMouseEnter={e => change(e)}
-            onTouchStart={e => change(e)}>{turnDuration}</div> :
+            id={index}>{turnDuration}</div> :
         <div 
-            onClick={e => column(e)} 
+            onClick={e => column(e)}
+            onTouchMove={e => change(e)} 
+            onMouseEnter={e => change(e)} 
             key={index}
-            id={index}
-            onMouseEnter={e => change(e)}
-            onTouchStart={e => change(e)}></div>;
+            id={index}></div>;
         return placeHolder;
     });
 
