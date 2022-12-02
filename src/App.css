@@ -36,6 +36,7 @@
   height: 100vh;
   background-color: var(--colorBG);
   font-size: var(--fs);
+  overflow-x: hidden;
 }
 
 /* Header styles */
