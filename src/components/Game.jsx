@@ -58,12 +58,14 @@ function Game(props){
             onClick={e => column(e)} 
             key={index}
             id={index}
-            onMouseEnter={e => change(e)}>{turnDuration}</div> :
+            onMouseEnter={e => change(e)}
+            onTouchStart={e => change(e)}>{turnDuration}</div> :
         <div 
             onClick={e => column(e)} 
             key={index}
             id={index}
-            onMouseEnter={e => change(e)}></div>;
+            onMouseEnter={e => change(e)}
+            onTouchStart={e => change(e)}></div>;
         return placeHolder;
     });
 
