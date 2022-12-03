@@ -46,9 +46,9 @@ function Rules(props){
             </ul>
             <div className='img-container'>
                 <i className="fa-solid fa-less-than" onClick={prevImg}></i>
-                {scenarios[0] && <img src="images/win1.png" alt="win scenario 1" />}
-                {scenarios[1] && <img src="images/win2.png" alt="win scenario 2" />}
-                {scenarios[2] && <img src="images/win3.png" alt="win scenario 3" />}
+                {scenarios[0] && <img src="images/win1.png" alt="win scenario 1" className="scenario"/>}
+                {scenarios[1] && <img src="images/win2.png" alt="win scenario 2" className="scenario"/>}
+                {scenarios[2] && <img src="images/win3.png" alt="win scenario 3" className="scenario"/>}
                 <i className="fa-solid fa-greater-than" onClick={nextImg}></i>
             </div>
         </main>

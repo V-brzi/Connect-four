@@ -60,7 +60,8 @@ function Game(props){
             key={index}
             id={index}>{turnDuration}</div> :
         <div 
-            onMouseEnter={e => change(e)} 
+            onMouseEnter={e => {e.preventDefault();
+                change(e)}} 
             key={index}
             id={index}></div>;
         return placeHolder;

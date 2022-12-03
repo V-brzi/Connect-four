@@ -442,7 +442,7 @@ li{
   transform: scale(0.97);
 }
 
-img{
+.scenario{
   max-height: 100%;
   border-radius: 5px;
 }
