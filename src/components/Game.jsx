@@ -56,7 +56,8 @@ function Game(props){
         const placeHolder = value ? 
         <div 
             className={`col-pick${playerTurn}`}
-            onClick={e => column(e)}
+            onClick={e => {e.preventDefault();
+                column(e)}}
             key={index}
             id={index}>{turnDuration}</div> :
         <div 
