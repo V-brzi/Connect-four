@@ -640,3 +640,9 @@ li{
     margin: 0 1rem;
   }
 }
+
+@media(max-height: 440px){
+  .header{
+    width: 98%;
+  }
+}
