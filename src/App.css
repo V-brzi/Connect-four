@@ -505,7 +505,8 @@ li{
 
 /* Media queries */
 
-@media(max-width: 500px){
+@media screen and(max-width: 550px),
+  screen and (max-height: 650px){
   :root{
     --slot-width: 25px;
 
@@ -641,8 +642,3 @@ li{
   }
 }
 
-@media(max-height: 440px){
-  .header{
-    width: 98%;
-  }
-}
