@@ -2,7 +2,6 @@ import React,{useEffect, useState} from "react";
 import useGameStatus from "../customHooks/useGameStatus";
 import useDisplayFields from "../customHooks/useDisplayFields";
 import displayFields from "../customHooks/useDisplayFields";
-import Swipe from "react-easy-swipe";
 
 
 function Game(props){
