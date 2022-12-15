@@ -83,11 +83,42 @@ function Game(props){
         setFields(displayFields());
     }, [newRound]);
 
+    function next(){
+        for(let i = 0; i < placeHolders.length; i++){
+            if(placeHolders[i] === true && i < placeHolders.length - 1){
+                setPlaceHolders(placeHolders.map((value, index) => {
+                    if(index === i + 1){
+                        return true
+                    }
+                    else return false
+                }))
+            }
+        }
+    }
+
+    function prev(){
+        for(let i = 0; i < placeHolders.length; i++){
+            if(placeHolders[i] === true && i > 0){
+                setPlaceHolders(placeHolders.map((value, index) => {
+                    if(index === i - 1){
+                        return true
+                    }
+                    else return false
+                }))
+            }
+        }
+    }
+
     return (
         <div className="game-container">
             {playerWon !== "" ? 
             <div className="game-won">{playerWon}</div> :
-            gameStart && <div className="placeholder">{displayPlaceHolder}</div>}
+            gameStart && 
+                <div className="placeholder">
+                    <i className="fa-solid fa-less-than prev" onClick={prev}></i>
+                    {displayPlaceHolder}
+                    <i className="fa-solid fa-greater-than next" onClick={next}></i>
+                </div>}
             <div className="game">
                 <div className="game-table">
                     {fields.map(field => field.html)}

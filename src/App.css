@@ -171,7 +171,13 @@
 }
 
 .placeholder{
+  position: relative;
   padding: .4rem 1rem;
+}
+
+.prev,
+.next{
+  display: none;
 }
 
 .game-won{
@@ -424,8 +430,8 @@ li{
   align-items: center;
 }
 
-.fa-less-than,
-.fa-greater-than{
+.rules-prev,
+.rules-next{
   display: flex;
   align-items: center;
   padding: 1rem;
@@ -437,8 +443,8 @@ li{
   background-color: var(--color2);
 }
 
-.fa-less-than:active,
-.fa-greater-than:active{
+.rules-prev:active,
+.rules-next:active{
   transform: scale(0.97);
 }
 
@@ -523,6 +529,33 @@ li{
     border: 1px solid var(--color2);
     border-top: 4px solid var(--color2);
     z-index: 3;
+  }
+
+  .prev,
+  .next{
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    bottom: 15%;
+    padding: .5rem;
+    color: var(--color2);
+    box-shadow: 0px 0px 2px 2px var(--color2);
+    -webkit-box-shadow: 0px 0px 2px 2px var(--color2);
+    -moz-box-shadow: 0px 0px 2px 2px var(--color2);
+    border-radius: 50%;
+  }
+
+  .prev:active,
+  .next:active{
+    transform: scale(0.97);
+  }
+
+  .prev{
+    left: -10%;
+  }
+
+  .next{
+    right: -10%;
   }
 
   .game-stand{
@@ -636,8 +669,8 @@ li{
     max-height: 25%;
   }
   
-  .fa-less-than,
-  .fa-greater-than{
+  .rules-prev,
+  .rules-next{
     margin: 0 1rem;
   }
 }
