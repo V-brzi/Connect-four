@@ -1,4 +1,4 @@
-### Connect-four game
+#### Connect-four game
 
 ## Overview
 I've created this fun game app for my portfolio to help me land my first Frontend Developer job.
