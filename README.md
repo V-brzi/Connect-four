@@ -13,9 +13,9 @@ I've created this fun game app for my portfolio to help me land my first Fronten
 Feel free to download the files and run this project locally.
 
 ## Dev Dependencies
-- [Vite] (https://vitejs.dev/)
-- [React] (https://reactjs.org/)
-- [Font Awsome] (https://fontawesome.com/search)
+- [Vite](https://vitejs.dev/)
+- [React](https://reactjs.org/)
+- [Font Awsome](https://fontawesome.com/search)
 
 ## Contact
 - Vatroslav Brzović - [LinkedIn](https://www.linkedin.com/in/vatroslav-brzovi%C4%87-a2707218b/)
