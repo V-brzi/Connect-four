@@ -17,9 +17,8 @@ function App() {
   const [openRules, setOpenRules] = useState(false);
 
   const resizeHanlder = () => {
-    let vh = window.screen.availHeight * 0.01
+    let vh = document.documentElement.clientHeight * 0.01
     document.documentElement.style.setProperty('--vh', `${vh}px`);
-    console.log(vh)
   }
 
   useEffect(() => {
