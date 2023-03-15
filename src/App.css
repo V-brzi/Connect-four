@@ -32,6 +32,7 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
+  top: 0;
   font-family: 'Fredoka One', cursive;
   width: 100vw;
   height: calc(var(--vh, 1vh) * 100);
