@@ -16,6 +16,18 @@ function App() {
   const [showRules, setShowRules] = useState(false);
   const [openRules, setOpenRules] = useState(false);
 
+  const resizeHanlder = () => {
+    let vh = window.innerHeight * 0.01
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+
+  useEffect(() => {
+    window.addEventListener('resize', resizeHanlder);
+
+    return () => {
+      window.removeEventListener('resize', resizeHanlder);
+    }
+  }, []);
 
   const [chipsNumP1, setChipsNumP1] = useState(
     Array(21).fill(""));

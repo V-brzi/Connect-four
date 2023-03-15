@@ -33,8 +33,7 @@
   position: relative;
   font-family: 'Fredoka One', cursive;
   width: 100vw;
-  height: 100vh;
-  max-height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   background-color: var(--colorBG);
   font-size: var(--fs);
   overflow-x: hidden;
