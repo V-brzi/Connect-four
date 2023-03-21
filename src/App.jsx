@@ -16,12 +16,14 @@ function App() {
   const [showRules, setShowRules] = useState(false);
   const [openRules, setOpenRules] = useState(false);
 
-  const resizeHanlder = () => {
-    let vh = document.documentElement.clientHeight * 0.01
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
 
   useEffect(() => {
+
+    const resizeHanlder = () => {
+      let vh = document.documentElement.clientHeight * 0.01
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    }
+    
     window.addEventListener('resize', resizeHanlder);
 
     return () => {
