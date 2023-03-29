@@ -36,7 +36,7 @@
   font-family: 'Fredoka One', cursive;
   width: 100vw;
   height: 100vh;
-  height: 100svh;
+  height: 100dvh;
   background-color: var(--colorBG);
   font-size: var(--fs);
   overflow-x: hidden;
