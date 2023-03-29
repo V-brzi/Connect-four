@@ -32,7 +32,6 @@
   justify-content: center;
   flex-direction: column;
   position: relative;
-  top: 0;
   font-family: 'Fredoka One', cursive;
   width: 100vw;
   height: 100vh;
@@ -40,6 +39,7 @@
   background-color: var(--colorBG);
   font-size: var(--fs);
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* Header styles */
