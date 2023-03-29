@@ -25,6 +25,15 @@
   padding: 0;
 }
 
+body{
+  height: 100vh;
+  height: 100dvh;
+}
+
+#root{
+  height: 100%;
+}
+
 .App{
   display: flex;
   align-self: flex-start;
@@ -34,8 +43,7 @@
   position: relative;
   font-family: 'Fredoka One', cursive;
   width: 100vw;
-  height: 100vh;
-  height: 100dvh;
+  height: 100%;
   background-color: var(--colorBG);
   font-size: var(--fs);
   overflow-x: hidden;
