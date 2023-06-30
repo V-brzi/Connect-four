@@ -16,7 +16,7 @@ function App() {
   const [showRules, setShowRules] = useState(false);
   const [openRules, setOpenRules] = useState(false);
 
-
+  
   const [chipsNumP1, setChipsNumP1] = useState(
     Array(21).fill(""));
   const [chipsNumP2, setChipsNumP2] = useState(

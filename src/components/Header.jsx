@@ -19,7 +19,7 @@ function Header(props) {
                 {playerWon === "Player one wins!" ?
                 <img 
                 className="fireworks"
-                src="https://gifimage.net/wp-content/uploads/2017/11/fireworks-gif-transparent-6.gif"
+                src="https://th.bing.com/th/id/R.e729ee58c5a792cb120323e5e3139886?rik=hzzIlTs%2b%2bnbxvw&pid=ImgRaw&r=0"
                 alt="fireworks image" /> :
                 <>
                     <h3>Player 1</h3>
@@ -40,7 +40,7 @@ function Header(props) {
                 {playerWon === "Player two wins!" ?
                 <img 
                 className="fireworks"
-                src="https://gifimage.net/wp-content/uploads/2017/11/fireworks-gif-transparent-6.gif"
+                src="https://th.bing.com/th/id/R.e729ee58c5a792cb120323e5e3139886?rik=hzzIlTs%2b%2bnbxvw&pid=ImgRaw&r=0"
                 alt="fireworks image" /> :
                 <>
                 <h3>Player 2</h3>

@@ -74,6 +74,10 @@ body{
   position: relative;
 }
 
+.fireworks{
+  width: 100%;
+  height: 100%;
+}
 
 .smile-container{
   position: absolute;
@@ -219,11 +223,6 @@ body{
   width: 100%;
   padding: 1rem;
   font-weight: bold;
-}
-
-.fireworks{
-  width: 100%;
-  height: 100%;
 }
 
 .game-table{
